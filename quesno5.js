@@ -1,4 +1,13 @@
-const arr1=[1,2,5] //object1
-const arr2=[...arr1];   // deep clone of object1 and copy them the same value//
-arr2[0]=3;              //change a first index value
-document.getElementById("clone").innerHTML=('Arr2',arr2);
+const a = {
+    string: 'string',
+    number: 123,
+    bool: false,
+    nul: null,
+    date: new Date(), 
+    undef: undefined,  
+    inf: Infinity,  
+    re: /.*/,  
+  }
+ console.log(a);
+const clone = JSON.parse(JSON.stringify(a));
+console.log(clone);

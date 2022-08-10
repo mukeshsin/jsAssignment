@@ -1,8 +1,10 @@
-var num = 32243
-var reverse=0;
+let num = 32243
+let rev=0;
+let lastDigit;
+// number is not equal zero//
 while(num!=0){
-    reverse=(reverse*10)+(num%10);
-    num=parseInt(num/10);
+    lastDigit=num%10;
+    rev=rev*10+lastDigit;
+    num=Math.floor(num/10);
 }
-console.log(num);
-//document.getElementById("demo7").innerHTML=(num);
+document.write(rev);
