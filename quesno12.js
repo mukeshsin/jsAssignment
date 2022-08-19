@@ -1,11 +1,8 @@
-function factorial(x) 
+var numb=5;
+var fact=1;
+ 
+for(var i=5;i>=1;i--)
 { 
-
-  if (x === 0)
- {
-    return 1;
- }
-  return x * factorial(x-1);
-         
+  fact=fact*i;
 }
-document.write(factorial(5));
+document.write(fact);

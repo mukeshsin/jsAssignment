@@ -1,22 +1,24 @@
-let obj1 = {
-    name: "John",
-    age: 23,
-    degree: "CS"
-}
+const today = new Date();
+const day = today.getDay();
+const dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
+document.getElementById("demo").innerHTML = ("Today is :" + dayList[day] + ",");
 
-let obj2 = {
-    name:"rohan",
-    age: 23,
-    degree: "CS"
+let hour = today.getHours();
+let minute = today.getMinutes();
+let seconds = today.getSeconds();
+// using loop method//
+let hourList = [];
+for (var i = 0; i <= 23; i++) {
+    hourList.push(i);
 }
-function check(obj1, obj2){
-    for (let key in obj2) {
-        if (obj1[key] !== obj2[key]) {
-            return false;
-        }
-    }
-    return true;
+let minuteList = [];
+for (var i = 0; i <= 59; i++) {
+    minuteList.push(i);
 }
-document.write(check(obj1,obj2));
-
-
+let secondList = [];
+for (var i = 0; i <= 59; i++) {
+    secondList.push(i);
+}
+let prepand = (i >= 12) ? "PM" : "AM";
+hour=(hour>=12)? hour-12:hour;
+document.getElementById("demo1").innerHTML = ("Current time is:" + hourList[hour] + "" + prepand + ":" + minuteList[minute] + ":" + secondList[seconds] + "");

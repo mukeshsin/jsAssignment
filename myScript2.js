@@ -1,6 +1,22 @@
-const random_hex_color_code = () => {
-    let n = (Math.random() * 0xfffff * 1000000).toString(16);
-    return '#' + n.slice(0, 6);
-  };
-document.getElementById("demo3").innerHTML=(random_hex_color_code());
-  
+let obj1 = {
+    name: "John",
+    age: 23,
+    degree: "CS"
+}
+
+let obj2 = {
+    name:"rohan",
+    age: 23,
+    degree: "CS"
+}
+function check(obj1, obj2){
+    for (let key in obj2) {
+        if (obj1[key] !== obj2[key]) {
+            return false;
+        }
+    }
+    return true;
+}
+document.write(check(obj1,obj2));
+
+
