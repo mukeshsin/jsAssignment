@@ -3,12 +3,11 @@ function valid_email(str)
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
 if(mailformat.test(str))
 {  
-console.log("Valid email address!");  
+document.write("Valid email address!");  
 }  
 else  
 {  
-console.log("You have entered an invalid email address!");  
+document.write("You have entered an invalid email address!");  
 }
 }
-
-valid_email('me-infoexample.com');
+valid_email('@xyzexample.com');
