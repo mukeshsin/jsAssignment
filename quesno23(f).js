@@ -1,4 +1,4 @@
-let programming = {
+const programmingobject = {
     languages: ["JavaScript", "Python", "Ruby"],
     isChallenging: true,
     isRewarding: true,
@@ -6,5 +6,11 @@ let programming = {
     Jokes:
         "http://stackoverflow.com/questions/234075/what-is-your-best-programmerjoke"
 };
-let enteries=object.entries(isFun(true));
-console.log(enteries)
+
+
+const keys = Object.keys(programmingobject);
+
+console.log(keys);
+for(let i=0;i<keys.length;i++){
+    console.log(keys[i]);
+}
