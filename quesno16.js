@@ -5,6 +5,9 @@ let is_weekend= function(date1){
        {
         return "weekend";
         } 
+        else{
+             return "no-weekend"
+        }
 }
 document.write(is_weekend('Nov 15, 2014')+"<br>");
 document.write(is_weekend('Nov 16, 2014')+"<br>");

@@ -1,4 +1,4 @@
-let programming = {
+let obj = {
     languages: ["JavaScript", "Python", "Ruby"],
     isChallenging: true,
     isRewarding: true,
@@ -6,5 +6,6 @@ let programming = {
     Jokes:
         "http://stackoverflow.com/questions/234075/what-is-your-best-programmerjoke"
 };
-let enteries=object.entries(isFun(true));
-console.log(enteries)
+ //Object.entries(obj.isFun = true);
+ obj.isFun = true
+console.log(obj);
